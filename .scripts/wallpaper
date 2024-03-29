@@ -1,0 +1,4 @@
+#!/bin/sh
+
+wallpaper=$(ls ~/Pictures | dmenu -i -l 50)
+[ $wallpaper -z ] || feh --bg-fill /home/nguyen/Pictures/$wallpaper
